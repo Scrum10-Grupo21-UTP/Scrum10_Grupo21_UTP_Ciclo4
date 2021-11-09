@@ -10,14 +10,17 @@ const CounterApp = ({ value = 0 }) => {
     const handleAdd = () => {
         setCounter( counter + 1);
         // setCounter( (c) => c + 1 );
-
-        const handleSubtract = () => setCounter(counter - 1);
-
-        const handleReset = () => setCounter(value);
-
+    }
+    const handleSubtract = () => {
+        setCounter(counter - 1);
     }
 
+    const handleReset = () => {
+        setCounter(value);
+    }
 
+    //const handleSubtract = () => setCounter(counter - 1);
+    //  const handleReset = () => setCounter(value);
 
     return (
         <>
